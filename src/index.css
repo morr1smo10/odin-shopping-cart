@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: antiquewhite;
+  height: 100px;
+}
+
+.header nav {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.header_grid {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header_grid a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.home_page, .shop_page, .checkout_page {
+  flex: 1;
+  background-color: rgb(251, 255, 244);
+  display: inline-block;
+}
+
+.home_page img {
+  width: 400px;
+  height: 400px;
+}
+
+.home_page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.home_page p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.shop_page {
+  text-align: center;
+}
+
+.shop_page h2 {
+  margin-top: 30px;
+}
+
+.shop_grid_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  row-gap: 50px;
+}
+
+.item_grid {
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.item_image {
+  width: 230px;
+  height: 230px;
+  padding: 15px;
+}
+
+.item_title {
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.item_price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.select_quantity {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 120px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.minus_btn, .plus_btn {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 0;
+}
+
+#amount {
+  width: 35.7px;
+  height: 28px;
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255, 208, 177);
+  text-align: center;
+}
+
+.checkout_page {
+  padding-top: 20px;
+}
+
+.checkout_page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.checkout_grid_container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-rows: 100px;
+  gap: 30px;
+}
+
+.checkout_stuff {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.checkout_title {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.checkout_count {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.checkout_price {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.checkout_total_price {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
